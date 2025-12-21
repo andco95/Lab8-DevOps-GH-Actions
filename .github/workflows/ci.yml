@@ -1,0 +1,85 @@
+name: Python Application CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  unit-tests:
+    name: Unit Tests (Postman)
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+    
+    - name: Install Newman
+      run: npm install -g newman
+
+    - name: Build images for unit tests
+      run: docker compose build
+
+    - name: Start calc services
+      run: docker compose up -d calc
+
+    - name: Wait for calc
+      run: sleep 10
+
+    - name: Run calc unit tests
+      run: newman run tests/calc_ut.postman_collecation.json
+
+    - name: Start string service
+      run: docker compose up -d string
+
+    - name: Wait for string
+      run: sleep 10
+
+    - name: Run string unit tests
+      run: newman run tests/string_ut.postman_collection.json
+
+  build-and-run:
+    name: Build & Run Architecture
+    runs-on: ubuntu-latest
+    needs: unit-tests
+  
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+  
+      - name: Build Docker images
+        run: docker compose build
+  
+      - name: Start services
+        run: docker compose up -d
+  
+      - name: Wait for services
+        run: sleep 20
+
+  integration-tests:
+    name: Integration Tests (Postman)
+    runs-on: ubuntu-latest
+    needs: build-and-run
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install Newman
+        run: npm install -g newman
+
+      - name: Run integration tests
+        run: newman run tests/integration.postman_collection.json
+
+  
