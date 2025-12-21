@@ -24,25 +24,28 @@ jobs:
       run: npm install -g newman
 
     - name: Build images for unit tests
-      run: docker compose build
+      run: docker compose -f src/docker-compose.yml build
 
     - name: Start calc services
-      run: docker compose up -d calc
+      run: docker compose -f src/docker-compose.yml up -d calc1 calc2
 
     - name: Wait for calc
       run: sleep 10
 
     - name: Run calc unit tests
-      run: newman run tests/calc_ut.postman_collecation.json
+      run: newman run tests/calc_ut.postman_collection.json
 
     - name: Start string service
-      run: docker compose up -d string
+      run: docker compose -f src/docker-compose.yml up -d string
 
     - name: Wait for string
       run: sleep 10
 
     - name: Run string unit tests
       run: newman run tests/string_ut.postman_collection.json
+
+    - name: Stop containers
+      run: docker compose -f src/docker-compose.yml down
 
   build-and-run:
     name: Build & Run Architecture
