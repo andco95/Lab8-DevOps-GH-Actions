@@ -32,8 +32,13 @@ jobs:
     - name: Wait for calc
       run: sleep 10
 
-    - name: Run calc unit tests
-      run: newman run tests/calc_ut.postman_collection.json
+    - name: Run calc unit tests (inside docker)
+      run: |
+        docker run -rm \
+          --network container: cacl1 \
+          -v ${{github.workspace}}/tests:/etc/newman \
+          postman/newman \
+          run /etc/newman/calc_ut.postman_collection.json
 
     - name: Start string service
       run: docker compose -f src/docker-compose.yml up -d string
@@ -42,7 +47,12 @@ jobs:
       run: sleep 10
 
     - name: Run string unit tests
-      run: newman run tests/string_ut.postman_collection.json
+      run: |
+        docker run -rm \
+          --network container: string \
+          -v ${{github.workspace}}/tests:/etc/newman \
+          postman/newman \
+          run /etc/newman/string_ut.postman_collection.json
 
     - name: Stop containers
       run: docker compose -f src/docker-compose.yml down
