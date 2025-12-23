@@ -27,7 +27,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:5000/add?a=1&b=0",
+					"raw": "calc1:5000/add?a=1&b=0",
 					"host": [
 						"localhost"
 					],
@@ -69,7 +69,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:5000/add?a=1&b=aaa",
+					"raw": "calc1:5000/add?a=1&b=aaa",
 					"host": [
 						"localhost"
 					],
@@ -112,7 +112,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:5000/div?a=10&b=5",
+					"raw": "calc1:5000/div?a=10&b=5",
 					"host": [
 						"localhost"
 					],
@@ -154,7 +154,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:5000/div?a=10&b=0",
+					"raw": "calc1:5000/div?a=10&b=0",
 					"host": [
 						"localhost"
 					],
@@ -197,7 +197,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:5000/mod?a=10&b=3",
+					"raw": "calc1:5000/mod?a=10&b=3",
 					"host": [
 						"localhost"
 					],
@@ -239,7 +239,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:5000/mod?a=10&b=0",
+					"raw": "calc1:5000/mod?a=10&b=0",
 					"host": [
 						"localhost"
 					],
@@ -282,7 +282,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:5000/random?a=1&b=10",
+					"raw": "calc1:5000/random?a=1&b=10",
 					"host": [
 						"localhost"
 					],
@@ -324,7 +324,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:5000/random?a=10&b=2",
+					"raw": "calc1:5000/random?a=10&b=2",
 					"host": [
 						"localhost"
 					],
