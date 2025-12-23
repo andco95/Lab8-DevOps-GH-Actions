@@ -38,7 +38,7 @@ jobs:
           --network src_default \
           -v ${{github.workspace}}/tests:/etc/newman \
           postman/newman \
-          run /etc/newman/calc_ut.postman_collection.json
+          run /etc/newman/calc_ut.postman_collection.json \
           --env-var baseUrl=http://calc1:5000
 
     - name: Start string service (inside docker)
