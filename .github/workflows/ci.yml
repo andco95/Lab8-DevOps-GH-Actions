@@ -34,7 +34,7 @@ jobs:
 
     - name: Run calc unit tests (inside docker)
       run: |
-        docker run -rm \
+        docker run --rm \
           --network container: cacl1 \
           -v ${{github.workspace}}/tests:/etc/newman \
           postman/newman \
@@ -48,7 +48,7 @@ jobs:
 
     - name: Run string unit tests
       run: |
-        docker run -rm \
+        docker run --rm \
           --network container: string \
           -v ${{github.workspace}}/tests:/etc/newman \
           postman/newman \
