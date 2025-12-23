@@ -29,7 +29,7 @@
 				"url": {
 					"raw": "calc1:5000/add?a=1&b=0",
 					"host": [
-						"localhost"
+						"calc1"
 					],
 					"port": "5000",
 					"path": [
@@ -71,7 +71,7 @@
 				"url": {
 					"raw": "calc1:5000/add?a=1&b=aaa",
 					"host": [
-						"localhost"
+						"calc1"
 					],
 					"port": "5000",
 					"path": [
@@ -114,7 +114,7 @@
 				"url": {
 					"raw": "calc1:5000/div?a=10&b=5",
 					"host": [
-						"localhost"
+						"calc1"
 					],
 					"port": "5000",
 					"path": [
@@ -156,7 +156,7 @@
 				"url": {
 					"raw": "calc1:5000/div?a=10&b=0",
 					"host": [
-						"localhost"
+						"calc1"
 					],
 					"port": "5000",
 					"path": [
@@ -199,7 +199,7 @@
 				"url": {
 					"raw": "calc1:5000/mod?a=10&b=3",
 					"host": [
-						"localhost"
+						"calc1"
 					],
 					"port": "5000",
 					"path": [
@@ -241,7 +241,7 @@
 				"url": {
 					"raw": "calc1:5000/mod?a=10&b=0",
 					"host": [
-						"localhost"
+						"calc1"
 					],
 					"port": "5000",
 					"path": [
@@ -284,7 +284,7 @@
 				"url": {
 					"raw": "calc1:5000/random?a=1&b=10",
 					"host": [
-						"localhost"
+						"calc1"
 					],
 					"port": "5000",
 					"path": [
@@ -326,7 +326,7 @@
 				"url": {
 					"raw": "calc1:5000/random?a=10&b=2",
 					"host": [
-						"localhost"
+						"calc1"
 					],
 					"port": "5000",
 					"path": [
