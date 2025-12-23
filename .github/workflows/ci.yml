@@ -39,6 +39,7 @@ jobs:
           -v ${{github.workspace}}/tests:/etc/newman \
           postman/newman \
           run /etc/newman/calc_ut.postman_collection.json
+          --env-var baseUrl=http://calc1:5000
 
     - name: Start string service (inside docker)
       run: docker compose -f src/docker-compose.yml up -d string
