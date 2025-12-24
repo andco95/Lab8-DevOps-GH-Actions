@@ -27,9 +27,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:5000/upper?a=aaAa",
+					"raw": "string:5000/upper?a=aaAa",
 					"host": [
-						"localhost"
+						"string"
 					],
 					"port": "5000",
 					"path": [
@@ -66,9 +66,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:5000/upper?a=0",
+					"raw": "string:5000/upper?a=0",
 					"host": [
-						"localhost"
+						"string"
 					],
 					"port": "5000",
 					"path": [
@@ -104,9 +104,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:5000/upper",
+					"raw": "string:5000/upper",
 					"host": [
-						"localhost"
+						"string"
 					],
 					"port": "5000",
 					"path": [
@@ -137,9 +137,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:5000/lower?a=AAaa",
+					"raw": "string:5000/lower?a=AAaa",
 					"host": [
-						"localhost"
+						"string"
 					],
 					"port": "5000",
 					"path": [
@@ -176,9 +176,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:5000/lower?a=0",
+					"raw": "string:5000/lower?a=0",
 					"host": [
-						"localhost"
+						"string"
 					],
 					"port": "5000",
 					"path": [
@@ -214,9 +214,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:5000/lower",
+					"raw": "string:5000/lower",
 					"host": [
-						"localhost"
+						"string"
 					],
 					"port": "5000",
 					"path": [
@@ -247,9 +247,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:5000/concat?a=aaa&b=ccc",
+					"raw": "string:5000/concat?a=aaa&b=ccc",
 					"host": [
-						"localhost"
+						"string"
 					],
 					"port": "5000",
 					"path": [
@@ -289,9 +289,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:5000/concat?a=aaa",
+					"raw": "string:5000/concat?a=aaa",
 					"host": [
-						"localhost"
+						"string"
 					],
 					"port": "5000",
 					"path": [
