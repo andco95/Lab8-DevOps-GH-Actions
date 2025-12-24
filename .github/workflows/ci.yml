@@ -94,10 +94,13 @@ jobs:
       - name: Install Newman
         run: npm install -g newman
 
+      - name: Start services
+        run: doker compose -f src/docker-compose.yml up -d
+
       - name: Run integration tests
         run: |
           docker run --rm \
-            --network src_default \
+            --network container:gateway \
             -v ${{ github.workspace }}/tests:/etc/newman \
             postman/newman \
             run /etc/newman/integration.postman_collection.json
