@@ -27,9 +27,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "calc:5000/calc/add?a=1&b=0",
+					"raw": "gateway:5000/calc/add?a=1&b=0",
 					"host": [
-						"calc"
+						"gateway"
 					],
 					"port": "5000",
 					"path": [
@@ -70,9 +70,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "calc:5000/calc/add?a=1&b=aaa",
+					"raw": "gateway:5000/calc/add?a=1&b=aaa",
 					"host": [
-						"calc"
+						"gateway"
 					],
 					"port": "5000",
 					"path": [
@@ -114,9 +114,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "calc:5000/calc/div?a=10&b=5",
+					"raw": "gateway:5000/calc/div?a=10&b=5",
 					"host": [
-						"calc"
+						"gateway"
 					],
 					"port": "5000",
 					"path": [
@@ -157,9 +157,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "calc:5000/calc/div?a=10&b=0",
+					"raw": "gateway:5000/calc/div?a=10&b=0",
 					"host": [
-						"calc"
+						"gateway"
 					],
 					"port": "5000",
 					"path": [
@@ -201,9 +201,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "calc:5000/calc/mod?a=10&b=3",
+					"raw": "gateway:5000/calc/mod?a=10&b=3",
 					"host": [
-						"calc"
+						"gateway"
 					],
 					"port": "5000",
 					"path": [
@@ -244,9 +244,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "calc:5000/calc/mod?a=10&b=0",
+					"raw": "gateway:5000/calc/mod?a=10&b=0",
 					"host": [
-						"calc"
+						"gateway"
 					],
 					"port": "5000",
 					"path": [
@@ -288,9 +288,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "calc:5000/calc/random?a=1&b=10",
+					"raw": "gateway:5000/calc/random?a=1&b=10",
 					"host": [
-						"calc"
+						"gateway"
 					],
 					"port": "5000",
 					"path": [
@@ -331,9 +331,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "calc:5000/calc/random?a=10&b=2",
+					"raw": "gateway:5000/calc/random?a=10&b=2",
 					"host": [
-						"calc"
+						"gateway"
 					],
 					"port": "5000",
 					"path": [
@@ -375,9 +375,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "string:5000/str/upper?a=aaAa",
+					"raw": "gateway:5000/str/upper?a=aaAa",
 					"host": [
-						"string"
+						"gateway"
 					],
 					"port": "5000",
 					"path": [
@@ -415,9 +415,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "string:5000/str/upper?a=0",
+					"raw": "gateway:5000/str/upper?a=0",
 					"host": [
-						"string"
+						"gateway"
 					],
 					"port": "5000",
 					"path": [
@@ -454,9 +454,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "string:5000/str/upper",
+					"raw": "gateway:5000/str/upper",
 					"host": [
-						"string"
+						"gateway"
 					],
 					"port": "5000",
 					"path": [
@@ -488,9 +488,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "string:5000/str/lower?a=AAaa",
+					"raw": "gateway:5000/str/lower?a=AAaa",
 					"host": [
-						"string"
+						"gateway"
 					],
 					"port": "5000",
 					"path": [
@@ -527,9 +527,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "string:5000/str/lower",
+					"raw": "gateway:5000/str/lower",
 					"host": [
-						"string"
+						"gateway"
 					],
 					"port": "5000",
 					"path": [
@@ -561,9 +561,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "string:5000/str/lower?a=0",
+					"raw": "gateway:5000/str/lower?a=0",
 					"host": [
-						"string"
+						"gateway"
 					],
 					"port": "5000",
 					"path": [
@@ -601,9 +601,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "string:5000/str/concat?a=aaa&b=ccc",
+					"raw": "gateway:5000/str/concat?a=aaa&b=ccc",
 					"host": [
-						"string"
+						"gateway"
 					],
 					"port": "5000",
 					"path": [
@@ -644,9 +644,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "string:5000/str/concat?a=aaa",
+					"raw": "gateway:5000/str/concat?a=aaa",
 					"host": [
-						"string"
+						"gateway"
 					],
 					"port": "5000",
 					"path": [
