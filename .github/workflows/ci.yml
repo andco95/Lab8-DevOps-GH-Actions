@@ -53,7 +53,8 @@ jobs:
           --network src_default \
           -v ${{github.workspace}}/tests:/etc/newman \
           postman/newman \
-          run /etc/newman/string_ut.postman_collection.json
+          run /etc/newman/string_ut.postman_collection.json \
+          --env-var baseUrl:http://string:5000
 
     - name: Stop containers
       run: docker compose -f src/docker-compose.yml down
