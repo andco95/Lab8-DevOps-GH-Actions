@@ -84,7 +84,7 @@ def string(op):
     elif op == 'crash':
         json_response = string_request(STRING_URL + f'/crash')
     elif op == 'upper':
-        a = "asd"
+        a = "a"
         json_response = string_request(STRING_URL + f'/{op}?a={a}')
     else:
         if b is None:
