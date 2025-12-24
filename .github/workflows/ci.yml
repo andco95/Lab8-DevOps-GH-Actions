@@ -100,7 +100,7 @@ jobs:
       - name: Run integration tests
         run: |
           docker run --rm \
-            --network container:gateway \
+            --network src_default \
             -v ${{ github.workspace }}/tests:/etc/newman \
             postman/newman \
             run /etc/newman/integration.postman_collection.json
